@@ -6,18 +6,28 @@ export interface TextProps {
   size?: "sm" | "md" | "lg";
   children: ReactNode;
   asChild?: boolean;
+  className?: string;
 }
 
-export const Text = ({ children, size = "md", asChild }: TextProps) => {
+export const Text = ({
+  children,
+  size = "md",
+  asChild,
+  className,
+}: TextProps) => {
   const Comp = asChild ? Slot : "span";
 
   return (
     <Comp
-      className={clsx("text-gray-400", {
-        "text-xs": size === "sm",
-        "text-md": size === "md",
-        "text-lg": size === "lg",
-      })}
+      className={clsx(
+        "text-gray-400",
+        {
+          "text-xs": size === "sm",
+          "text-md": size === "md",
+          "text-lg": size === "lg",
+        },
+        className
+      )}
     >
       {children}
     </Comp>

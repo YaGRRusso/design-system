@@ -13,7 +13,7 @@ export default {
 
 export const Default: StoryObj<TextInputRootProps> = {};
 
-export const WithoutIcon: StoryObj<TextInputRootProps> = {
+export const WithIcon: StoryObj<TextInputRootProps> = {
   args: {
     children: [
       <TextInput.Icon>
