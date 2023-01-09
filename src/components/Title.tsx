@@ -9,12 +9,7 @@ export interface TitleProps {
   className?: string;
 }
 
-export const Title = ({
-  children,
-  size = "md",
-  asChild,
-  className,
-}: TitleProps) => {
+export default ({ children, size = "md", asChild, className }: TitleProps) => {
   const Comp = asChild ? Slot : "h2";
 
   return (

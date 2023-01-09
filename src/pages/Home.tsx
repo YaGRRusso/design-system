@@ -1,5 +1,4 @@
-import { Text } from "../components/Text";
-import { Title } from "../components/Title";
+import { Text, Title } from "../components";
 import { Link } from "react-router-dom";
 import { Logo } from "../svgs/Logo";
 

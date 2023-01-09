@@ -1,9 +1,5 @@
 import { Envelope, KeyReturn, Lock } from "phosphor-react";
-import { Button } from "../components/Button";
-import { Checkbox } from "../components/Checkbox";
-import { Text } from "../components/Text";
-import { TextInput } from "../components/TextInput";
-import { Title } from "../components/Title";
+import { Button, Checkbox, Text, TextInput, Title } from "../components";
 import { Logo } from "../svgs/Logo";
 import { Link } from "react-router-dom";
 import axios from "axios";

@@ -1,8 +1,34 @@
 {
-  "name": "design-system",
-  "private": true,
-  "version": "0.0.0",
+  "name": "yagrrusso-design-system",
+  "private": false,
   "type": "module",
+  "version": "0.0.0",
+  "description": "Components collection",
+  "author": "Yago Russo",
+  "license": "ISC",
+  "files": [
+    "/dist"
+  ],
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YaGRRusso/design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YaGRRusso/design-system/issues"
+  },
+  "homepage": "https://github.com/YaGRRusso/design-system#readme",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -12,18 +38,10 @@
     "deploy-storybook": "storybook-to-ghpages",
     "test-storybook": "test-storybook"
   },
-  "dependencies": {
-    "@radix-ui/react-checkbox": "^1.0.0",
-    "@radix-ui/react-slot": "^1.0.0",
-    "axios": "^1.1.2",
-    "clsx": "^1.2.1",
-    "phosphor-react": "^1.4.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.2"
-  },
   "devDependencies": {
     "@babel/core": "^7.19.3",
+    "@radix-ui/react-checkbox": "^1.0.0",
+    "@radix-ui/react-slot": "^1.0.0",
     "@storybook/addon-a11y": "^6.5.12",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-essentials": "^6.5.12",
@@ -39,14 +57,21 @@
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
     "autoprefixer": "^10.4.12",
+    "axios": "^1.1.2",
     "babel-loader": "^8.2.5",
+    "clsx": "^1.2.1",
     "msw": "^0.47.4",
     "msw-storybook-addon": "^1.6.3",
+    "phosphor-react": "^1.4.1",
     "postcss": "^8.4.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.2",
     "storybook-addon-react-router-v6": "^0.2.1",
     "tailwindcss": "^3.1.8",
     "typescript": "^4.6.4",
-    "vite": "^3.1.0"
+    "vite": "^3.1.0",
+    "vite-plugin-dts": "^1.7.1"
   },
   "msw": {
     "workerDirectory": "public"

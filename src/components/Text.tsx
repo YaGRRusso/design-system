@@ -9,12 +9,7 @@ export interface TextProps {
   className?: string;
 }
 
-export const Text = ({
-  children,
-  size = "md",
-  asChild,
-  className,
-}: TextProps) => {
+export default ({ children, size = "md", asChild, className }: TextProps) => {
   const Comp = asChild ? Slot : "span";
 
   return (
