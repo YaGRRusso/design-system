@@ -10,11 +10,13 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "./src/components/index.ts"),
-      name: "yagrrusso-design-system",
+      name: "design-system-yagrrusso",
       fileName: (format) => `index.${format}.js`,
     },
+    minify: true,
+    reportCompressedSize: true,
     rollupOptions: {
-      external: ["react"],
+      external: ["react", "react-dom"],
       output: {
         globals: {
           react: "React",
