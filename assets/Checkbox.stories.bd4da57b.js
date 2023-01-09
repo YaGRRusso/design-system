@@ -1,0 +1,2 @@
+import{C as r,T as t}from"./Title.68812458.js";import{a as o,j as s}from"./jsx-runtime.3fcd0462.js";import"./index.91144927.js";import"./iframe.896bd625.js";import"./index.85e6b83b.js";const p={title:"Components/Checkbox",component:r,args:{children:"Criar conta"},decorators:[e=>o("label",{className:"flex items-center text-gray-400 gap-2 cursor-pointer",children:[e(),s(t,{size:"sm",children:"Lembrar de mim por 30 dias"})]})]},l={},x=["Default"];export{l as Default,x as __namedExportsOrder,p as default};
+//# sourceMappingURL=Checkbox.stories.bd4da57b.js.map
